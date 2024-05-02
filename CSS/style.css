@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  /* this makes the default font size 10px and make calculations easier in 10s places on rem units, if the default font size by browser is 16px*/
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem; /* Equivalent to 16px */
+  line-height: 1.6; /* Ensures consistent line spacing */
+}
+
+h1 {
+  font-size: 2.4rem; /* Equivalent to 24px */
+}
+
+h2 {
+  font-size: 2rem; /* Equivalent to 20px */
+}
+
+h3 {
+  font-size: 1.8rem; /* Equivalent to 18px */
+}
+
+h4 {
+  font-size: 1.6rem; /* Equivalent to 16px */
+}
+
+h5 {
+  font-size: 1.4rem; /* Equivalent to 14px */
+}
+
+h6 {
+  font-size: 1.2rem; /* Equivalent to 12px */
+}
+
+p {
+  font-size: 1.6rem; /* Equivalent to 16px */
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* navigation */
+header {
+  background-color: #333333;
+  padding: 1rem;
+}
+
+.inner-container,
+nav {
+  width: 90.6rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.inner-container {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icons {
+  width: 1.8rem;
+  
+}
+
+
+nav ul li a {
+  /* center the nav icons vertically center */
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0.8;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+/* Nav ends here */
+
+/* main Highlight section starts here*/
+
+.model {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.main-highlight-wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 7rem !important;
+
+}
+
+.main-highlight-wrapper .item-title {
+  font-size: 7rem;
+  margin: 0 auto;
+}
+
+.item-description {
+  font-size: 2rem;
+  /* margin: 1rem auto; */
+}
+
+.main-highlight-wrapper .item-description {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.main-highlight-wrapper .info-links{
+  margin-top: 0;
+  line-height: 3rem;
+}
+
+.info-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.info-links a{
+  color:#06c;;
+}
+
+.info-links a:hover {
+color: black;
+}
+.second-highlight-wrapper a:hover,.apple-airpods a:hover{
+  color: white;
+}
+
+.item-img-wrapper img {
+  margin: 3rem auto;
+  width: 45vw;
+
+  /* try to add a box shadow for the images after correcting the asset on PS */
+}
+
+/* second section - iphone 11 pro section */
+.highlight-bg .item-title{
+  font-weight: 600;
+}
+
+
+
+.second-highlight-wrapper {
+  background: url("../images/home/iphone11-pro-bg.jpg");
+}
+
+.item-title {
+  margin-top: .5rem;
+  font-size: 5rem;
+}
+
+.price {
+  color: #89898b;
+  margin-top: .5rem;
+}
+
+/* Third section - iphone 11 pro section */
+.third-highlight-wrapper {
+  background: url("../images/home/iphone11-bg.jpg");
+}
+
+.third-highlight-wrapper .item-title,
+.third-highlight-wrapper .item-description {
+  color: black;
+}
+
+/* for the highlight sections that have a background image */
+.highlight-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 58rem;
+  color: white;
+}
+
+/* products list, cards section starts here */
+
+.first-row,
+.second-row,
+.third-row {
+display: flex;
+justify-content: space-between;
+/* gap: 1rem; */
+width: 90vw;
+}
+
+.card-bg{
+  width: 50%;
+  border: .2rem solid rgba(164, 163, 163, 0.1);
+  border-radius: 1rem;
+  height: 50rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-color: #f9f9f9 !important;
+}
+
+.bg-bottom{
+  background-position: bottom !important;
+  background-size: initial !important;
+  background-repeat: no-repeat !important;
+}
+
+.product-logo {
+  width: 20rem;
+  margin: 0 auto;
+  /* margin: auto; */
+  padding-top: .5rem;
+
+}
+
+.brief {
+  max-width: 35rem;
+  margin: 1rem auto;
+}
+
+.products-list .info-links {
+  /* margin: 0; */
+}
+
+.apple-watch {
+  background: url("../images/home/watch-series-5.jpg");
+
+}
+
+.apple-card {
+  background: url("../images//home/apple-card.jpg");
+}
+
+.apple-tv {
+  background: url("../images/home/apple-tv-background.jpg");
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.learn-more a{
+  position: relative;
+}
+
+/* play icon for the apple tv watch trailer */
+.watch-more a::after{
+font-family: fontAwesome;
+content: "\f144";
+margin-left: .6rem;
+vertical-align: middle;
+
+}
+
+.apple-airpods {
+  background: url("../images/home/air-pods.jpg");
+  background-color: black !important;
+  color: white;
+
+}
+
+.macbook-pro {
+  background: url("../images/home/macbook-pro2.jpg");
+  background-size: initial !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+}
+
+.model2,.item-description2 {
+  font-weight: 600;
+}
+
+.item-title2{
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.ipad {
+  background: url("../images/home/new-ipad.jpg");
+}
+
+
+
+/* footer part */
+.footer-wrapper{
+  margin: 1rem auto auto;
+  padding: 1.5rem;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.footer-wrapper p{
+  font-size: 1.2rem !important;
+}
+
+.footer-wrapper .inner-container ul li a {
+  font-size: 1.1rem;
+  color: #515154;
+}
+
+.footer-wrapper .inner-container ul li a:hover {
+  text-decoration: underline;
+}
+
+.inner-container h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.upper-text-container{
+  text-align: justify;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: .1rem solid #d2d2d7;
+  color: #86868b; 
+  margin: auto auto 2rem auto;
+}
+
+.upper-text-container p{
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.upper-text-container a{
+  color: #515154; 
+}
+
+.upper-text-container a:hover{
+  text-decoration: underline; 
+}
+
+.footer-links-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.footer-links-wrapper ul{
+  margin-bottom: 1.5rem;
+}
+
+.footer-links-wrapper ul li{
+  line-height: 2rem;
+}
+
+
+.copyright-wrapper, .footer-links-terms ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.my-apple-wrapper{
+  border-bottom: .1rem solid #d2d2d7; 
+  width: 100%;
+  text-align: left;
+  margin: .5rem;
+  padding-bottom: .5rem;
+}
+
+.my-apple-wrapper a:hover{
+text-decoration: underline;
+}
+
+.copyright-wrapper .footer-links-terms ul li::after{
+  content: '|';
+  padding:  1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* remove the separator '|' from the last item */
+.footer-links-terms ul li:last-child::after{
+content: '';
+}
+
+.copyright-wrapper .copyright{
+font-size: 1.2rem;
+}
+
+.footer-country
+{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flag-wrapper{
+  display: flex;  /* this makes the flag centered vertically*/
+  align-items: center;
+}
